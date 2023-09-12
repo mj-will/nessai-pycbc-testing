@@ -1,0 +1,16 @@
+name: nessai-pycbc
+channels:
+  - pytorch
+  - astropy
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch
+  - cpuonly
+  - nessai
+  - natsort
+  - ipykernel
+  - pycbc
+  - mpi4py
+  - pre-commit
+  - pytest
