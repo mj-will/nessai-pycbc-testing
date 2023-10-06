@@ -162,3 +162,12 @@ cython_debug/
 # Project specific
 outdir*/
 logs/
+*.checkpoint
+*.bkup
+*.hdf
+*.gwf
+*.pkl
+*.pkl.old
+*.hdf5
+*.pt
+*.pt.old
