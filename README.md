@@ -1,4 +1,4 @@
-# nessai-pycbc
+# nessai-pycbc-testing
 
 Developing and testing integration of nessai in pycbc inference.
 
@@ -10,13 +10,14 @@ The base environment can be create using conda
 conda env create -f base_env.yaml
 ```
 
-You then need to install specific versions of nessai and pycbc:
+This sets a minimum version for nessai that includes new features needed to support pycbc.
 
-- nessai: [commit 0b340a6](https://github.com/mj-will/nessai/commit/0b340a69151feaa296bf756153ea22457e703a37) (not released)
+You then need to install a specific version of pycbc:
+
 - pycbc: [branch on fork](https://github.com/mj-will/pycbc/tree/add-nessai-sampler)
 
 
-Note both codes are subject to change as I address bugs etc.
+Note this branch is subject to change.
 
 ## Running tests
 
@@ -39,6 +40,10 @@ Test multiprocessing with nessai using the pool defined in pycbc.
 `multiprocessing-test` just uses the default pool from pycbc.
 
 `multiprocessing-test-mpi` uses MPI instead of the default pool.
+
+## Resume test
+
+Test that it's possible to resume the sampler. This test forces the sampler to finish before reaching the stopping criterion and then resumes it.
 
 ## BBH injection tests
 
