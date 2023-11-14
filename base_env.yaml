@@ -7,7 +7,7 @@ channels:
 dependencies:
   - pytorch
   - cpuonly
-  - nessai
+  - nessai >= 0.10.1
   - natsort
   - ipykernel
   - pycbc
